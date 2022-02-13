@@ -58,6 +58,7 @@ struct ContentView: View {
                         VStack {
                             Text(lucidDream.dreamDate ?? Date(), style: .date)
                                     .frame(maxWidth: .infinity, alignment: .leading)
+                                    .font(Font.headline.weight(.bold))
                             Text(lucidDream.dream ?? "")
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
