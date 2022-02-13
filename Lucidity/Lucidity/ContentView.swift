@@ -55,8 +55,12 @@ struct ContentView: View {
                 
                 List {
                     ForEach(allDreams) { lucidDream in
-                        Text(lucidDream.dreamDate ?? Date(), style: .date)
-                        Text(lucidDream.dream ?? "")
+                        VStack {
+                            Text(lucidDream.dreamDate ?? Date(), style: .date)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            Text(lucidDream.dream ?? "")
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                     }.onDelete(perform: deleteDream)
                 }
                 
