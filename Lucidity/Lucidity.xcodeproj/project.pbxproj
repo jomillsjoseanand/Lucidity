@@ -12,6 +12,7 @@
 		20593D2C27B8C32E00C43480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20593D2B27B8C32E00C43480 /* Assets.xcassets */; };
 		20593D2F27B8C32E00C43480 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20593D2E27B8C32E00C43480 /* Preview Assets.xcassets */; };
 		20593D3727B8C3C100C43480 /* DreamJournalModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20593D3527B8C3C100C43480 /* DreamJournalModel.xcdatamodeld */; };
+		20593D3C27B8C71200C43480 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20593D3B27B8C71200C43480 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		20593D2B27B8C32E00C43480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20593D2E27B8C32E00C43480 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20593D3627B8C3C100C43480 /* DreamJournalModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamJournalModel.xcdatamodel; sourceTree = "<group>"; };
+		20593D3B27B8C71200C43480 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		20593D2627B8C32D00C43480 /* Lucidity */ = {
 			isa = PBXGroup;
 			children = (
+				20593D3827B8C6C800C43480 /* Managers */,
 				20593D2727B8C32D00C43480 /* LucidityApp.swift */,
 				20593D2927B8C32D00C43480 /* ContentView.swift */,
 				20593D2B27B8C32E00C43480 /* Assets.xcassets */,
@@ -68,6 +71,14 @@
 				20593D2E27B8C32E00C43480 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		20593D3827B8C6C800C43480 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				20593D3B27B8C71200C43480 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			files = (
 				20593D2A27B8C32D00C43480 /* ContentView.swift in Sources */,
 				20593D3727B8C3C100C43480 /* DreamJournalModel.xcdatamodeld in Sources */,
+				20593D3C27B8C71200C43480 /* CoreDataManager.swift in Sources */,
 				20593D2827B8C32D00C43480 /* LucidityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
