@@ -23,9 +23,20 @@ struct ContentView: View {
         } catch {
             print(error.localizedDescription)
         }
-        
     }
     
+    private func deleteDream(at offsets: IndexSet) {
+        offsets.forEach { index in
+            let dream = allDreams[index]
+            viewContext.delete(dream)
+            
+            do {
+                try viewContext.save()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -46,7 +57,7 @@ struct ContentView: View {
                     ForEach(allDreams) { lucidDream in
                         Text(lucidDream.dreamDate ?? Date(), style: .date)
                         Text(lucidDream.dream ?? "")
-                    }
+                    }.onDelete(perform: deleteDream)
                 }
                 
                 Spacer()
